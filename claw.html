@@ -19,18 +19,19 @@
     </div>
     <div class="page-content">
       <div class="game-explanation">
-        <p><span style="font-size: 60px;"> #1 Customers Choice</span>
+        <p><span class='heading-text'> #1 Customers Choice</span>
         </p>
-        <p style="font-size: 20px;">This game is the customers favorite, as the game <span
-            class="purple-text">engagement rate</span> is
-          reaching up to
-          <span class="purple-text">96%</span> !
-        </p>
-        <p style="font-size: 20px;">Up to <span class="purple-text">78% conversion to purchase rate </span> from users
-          that played the game.
-        </p>
+        <p class="hide-on-mobile" style="font-size: 20px;">Discover why this game is a customer favorite!
+      </p>
+        <p class="hide-on-mobile" style="font-size: 20px;">- With an astounding game   <span class="purple-text">engagement rate of up to 96%,</span> it's no wonder users can't get enough.
+      </p>
+        <p class="hide-on-mobile" style="font-size: 20px;">- Enjoy up to a   <span class="purple-text">78% conversion rate to purchase</span> from players.
+      </p>
+        <p class="hide-on-mobile" style="font-size: 20px;">- It  <span class="purple-text">won't slow down</span> won't slow down your website – the add-on is as light as a regular popup!
+      </p>
+        <p  class="hide-on-mobile" style="font-size: 20px;">Try Boomio games and experience the incredible results!
+      </p>
         <div style="display:flex;  margin: 50px 0px">
-
           <span style="font-size: 20px;">Rate this game</span>
           <div id="stars"></div>
         </div>
@@ -48,10 +49,14 @@
     <h4>Interested How it Looks on YOUR page?</h4>
   </div>
   <div style="display:flex; justify-content: center;">
-    <div class="input-background"> <input  id="url-input" class="input-text" placeholder="Enter URL of your e-shop">
-      <button class="colored-button" id="url-button" style=" position: absolute; right: 0px; height: 38px">
+    <div class="input-background">
+      <div class="input-wrapper">
+     <input id="url-input" class="input-text" placeholder="Enter URL of your e-shop">
+   </div>
+     
+     <button class="colored-button" id="url-button" style=" position: absolute; right: 0px; height: 38px">
       <!-- <button class="colored-button" id="url-button" style=" position: absolute; right: 0px; height: 38px" onclick="window.location.href='https://www.boomio.com/'"> -->
-        <span>PREVIEW</span>
+        <span class="prev-btn-text">PREVIEW</span>
       </button>
     </div>
    
@@ -62,7 +67,7 @@
       <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/mole.png?raw=true" alt=""
       onclick="window.location.href='https://boomio-e-shop.myshopify.com/pages/whack-a-mole'">
       <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/break-ice.png?raw=true" alt="" onclick="window.location.href='https://boomio-e-shop.myshopify.com/pages/break-the-ice'">
-      <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/other.png?raw=true" alt="" onclick="window.location.href='https://www.boomio.com/'">
+      <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/other.png?raw=true" alt="" onclick="window.location.href='https://share-eu1.hsforms.com/17ojO4FWHQHWPmKzC2m3c2wg20qx'">
      </div>
   </div>
   <div class="page-footer">
@@ -271,24 +276,33 @@
     }
 
     .input-background {
-      line-height: 38px;
-      position: relative;
-      border-radius: 32px !important;
-      background: linear-gradient(41.01deg, #FF6E6D 0%, #FF3183 5.48%, #598BF3 88.77%, #657BEA 95.23%, #34B0DC 101.49%);
-      width: 425px;
-      margin: 0 20px;
-      position: relative !important;
-    }
+    line-height: 38px;
+    height: 38px;
+    position: relative;
+    border-radius: 32px !important;
+    background: linear-gradient(41.01deg, #FF6E6D 0%, #FF3183 5.48%, #598BF3 88.77%, #657BEA 95.23%, #34B0DC 101.49%);
+    width: 425px;
+    margin: 0 20px;
+    position: relative !important;
+}
+ 
+.input-wrapper {
+    height: 36px;
+    position: absolute;
+    left: 44px;
+    top: 0px;
+}
 
-    .input-text {
-      line-height: 36px;
+.input-text {
+    line-height: 36px;
     border-radius: 32px;
     width: 380px;
     padding: 0px;
     margin-left: -43px;
     border: none;
     padding-left: 10px;
-     }
+    height: 100%;
+}
 
     .input-text:focus {
       outline: none;
@@ -343,11 +357,94 @@
       padding: 0px !important;
     }
 
-    @media (max-width: 1025px) {
+    @media (max-width: 1090px) {
+      .container {
+        width: 90%;
+      }
       .page-content {
         flex-wrap: wrap;
         flex-direction: column-reverse;
       }
+    }
+
+    @media (max-width: 490px) {
+      .container {
+        width: 90%;
+      }
+
+      .white-button {
+        width: 90px;
+        height: 25px;
+      }
+
+      .colored-button {
+        width: 90px;
+        height: 25px;
+        position: relative;
+      }
+
+      .white-button span {
+        width: 60px;
+        letter-spacing: 0px;
+        font-size: 8px;
+        position: absolute;
+        bottom: 7px;
+        left: 15px;
+      }
+
+      .colored-button span {
+        width: 60px;
+        letter-spacing: 0px;
+        font-size: 8px;
+        position: absolute;
+        bottom: 7px;
+        left: 15px;
+      }
+      .w500 {
+    width: 200px;
+    height: 200px;
+    transform: none;
+}
+.heading-text {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.hide-on-mobile {
+display: none}
+h4 {
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+ }
+ .input-background {
+       width: 320px;
+       margin-bottom: 30px;
+  }
+  .input-text {
+    width: 252px;
+    font-size: 12px;
+}
+.prev-btn-text {
+  bottom: 14px !important;
+}
+.other-games {
+margin-top: 0px
+}
+
+.bottom-slogans {
+      flex-direction: column;
+}
+.w20 {
+    width: 12px;
+}
+.bottom-text {
+    font-size: 15px;
+}
+.bottom-block {
+    margin-left: 80px
+}
+
+
     }
 
     .rte img {
