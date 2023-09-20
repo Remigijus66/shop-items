@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container" class="container">
+    <div class="page-header">
+      <img class="logo" src="https://github.com/Remigijus66/shop-items/blob/main/boomio-logo-color.png?raw=true" alt="">
+      <div class="header-menu">
+        <button class="white-button" onclick="window.location.href='https://www.boomio.com/'"> <span>LEARN MORE</span>
+        </button>
+        <button class="colored-button" onclick="window.location.href='https://www.boomio.com/contact-us'">
+          <span>CONTACT US</span> </button>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="game-explanation">
+        <p><span style="font-size: 60px;"> #1 Game for shattering</span>
+        </p>
+        <p style="font-size: 20px;">Prepare to be amazed by the 'Shatter' game! </p>
+        <p style="font-size: 20px;">- Witness up to <span class="purple-text">84% increase in browsing time,</span>
+          setting new standards for prolonged website engagement.</p>
+        <p style="font-size: 20px;">- Achieve an up to <span class="purple-text">78% conversion rate to purchases</span>
+          from users who've immersed themselves in the game.</p>
+        <p style="font-size: 20px;">- It <span class="purple-text">won't slow down</span> your website – the add-on is
+          as light as a regular popup!</p>
+        <p style="font-size: 20px;">Try Boomio games and experience the incredible results!</p>
+        <div style="display:flex;  margin: 50px 0px">
+
+          <span style="font-size: 20px;">Rate this game</span>
+          <div id="stars"></div>
+        </div>
+      </div>
+      <div>
+        <img class="game-card w500" src="https://github.com/Remigijus66/shop-items/blob/main/ice.png?raw=true" alt="">
+        <div class=" rating">
+          <!-- <div id="stars"> -->
+        </div>
+        <!-- <span style="font-size: 25px;">RATE THIS GAME</span> -->
+      </div>
+
+    </div>
+    <div style="display:flex; justify-content: center">
+      <h4>Interested How it Looks on YOUR page?</h4>
+    </div>
+    <div style="display:flex; justify-content: center;">
+      <div class="input-background"> <input id="url-input" class="input-text" placeholder="Enter URL of your e-shop">
+        <button class="colored-button" id="url-button" style=" position: absolute; right: 0px; height: 38px">
+          <!-- <button class="colored-button" id="url-button" style=" position: absolute; right: 0px; height: 38px" onclick="window.location.href='https://www.boomio.com/'"> -->
+          <span>PREVIEW</span>
+        </button>
+      </div>
+
+    </div>
+    <div class="other-games">
+      <h4>Take a look at other games</h4>
+      <div>
+        <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/mole.png?raw=true" alt=""
+          onclick="window.location.href='https://boomio-e-shop.myshopify.com/pages/whack-a-mole'">
+        <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/other.png?raw=true" alt=""
+          onclick="window.location.href='https://boomio-e-shop.myshopify.com/pages/claw-machine'">
+        <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/other.png?raw=true" alt=""
+          onclick="window.location.href='https://www.boomio.com/'">
+      </div>
+    </div>
+    <div class="page-footer">
+      <h4>Use your exclusive discount code</h4>
+      <div class="bottom-slogans">
+        <div class="bottom-block">
+          <img class="w20" src="https://github.com/Remigijus66/shop-items/blob/main/circle-checked.png?raw=true" alt="">
+          <span class="colored-text bottom-text"> Boost loyality</span>
+        </div>
+        <div class="bottom-block">
+          <img class="w20" src="https://github.com/Remigijus66/shop-items/blob/main/circle-checked.png?raw=true" alt="">
+          <span class="colored-text bottom-text">Revolutionize your capmaigns</span>
+        </div>
+        <div class="bottom-block">
+          <img class="w20" src="https://github.com/Remigijus66/shop-items/blob/main/circle-checked.png?raw=true" alt="">
+          <span class="colored-text bottom-text"> Delight customers</span>
+        </div>
+      </div>
+      <button class="white-button"
+        onclick="window.location.href='https://share-eu1.hsforms.com/1IzR9c_AHS1mP2wAXF7u7cgg20qx'"> <span>Use
+          Code</span></button>
+    </div>
+  </div>
+  <style>
+    span {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -1px;
+    }
+
+    h4 {
+      margin: 50px 0 20px 0;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -1px;
+    }
+
+    p {
+      font-weight: 100;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -1px;
+      text-align: left;
+    }
+
+    p span {
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .container {
+
+      position: relative;
+      margin: auto;
+      max-width: 1100px;
+    }
+
+    .page-header {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0px;
+    }
+
+    .header-menu {
+      margin: auto 0px auto 0px;
+    }
+
+    .link {
+      padding: 5px;
+      margin: 10px;
+    }
+
+    .colored-button {
+      padding: 10px 20px !important;
+      border: none !important;
+      border-radius: 32px !important;
+      background: linear-gradient(41.01deg, #FF6E6D 0%, #FF3183 5.48%, #598BF3 88.77%, #657BEA 95.23%, #34B0DC 101.49%);
+      cursor: pointer !important;
+      color: #000 !important;
+      color: white !important;
+      width: 140px;
+    }
+
+    .white-button {
+      padding: 10px 20px !important;
+      border: none !important;
+      outline: none !important;
+      position: relative;
+      z-index: 1 !important;
+      border-radius: 32px !important;
+      background: linear-gradient(41.01deg,
+          #FF6E6D 0%,
+          #FF3183 5.48%,
+          #598BF3 88.77%,
+          #657BEA 95.23%,
+          #34B0DC 101.49%);
+      cursor: pointer !important;
+      color: #000 !important;
+      transition: 0.5s !important;
+      width: 140px;
+    }
+
+    .white-button span {
+      background: linear-gradient(to right,
+          #ff6e6d 0%,
+          #ff3183 5.48%,
+          #8559f3 88.77%,
+          #657bea 95.23%,
+          #34b0dc 101.49%);
+      -webkit-background-clip: text;
+      font-weight: 600;
+      -webkit-text-fill-color: transparent;
+      width: 140px;
+    }
+
+    .white-button::before {
+      content: "";
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      top: 1px;
+      bottom: 1px;
+      border-radius: 32px;
+      font-weight: 600;
+      background-color: white;
+      z-index: -1;
+      transition: 200ms;
+    }
+
+
+    .colored-text {
+      background-image: linear-gradient(to right top, #FFC24F 8.58%, #FF3183 32.32%, #8559F3 60.82%, #657BEA 66.73%, #34B0DC 77.01%, #15D1D3 84.73%, #09DDD0 88.95%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .purple-text {
+      color: #8559F3
+    }
+
+    .page-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .w500 {
+      width: 500px;
+      height: 500px;
+      transform: translateX(45px);
+    }
+
+    .w300 {
+      width: 300px;
+
+    }
+
+    .w100 {
+      width: 100px;
+      height: 100px;
+    }
+
+    .w20 {
+      width: 20px;
+      height: 20px;
+    }
+
+    .game-explanation {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .other-games {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .rating {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #stars {
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+    }
+
+    .star {
+      width: 25px;
+    }
+
+    .submit-btn {
+      border: solid 3px rgb(255, 221, 4);
+      border-radius: 5px;
+      font-size: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -1px;
+      height: 20px;
+      width: 60px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+    }
+
+    .input-background {
+      line-height: 38px;
+      position: relative;
+      border-radius: 32px !important;
+      background: linear-gradient(41.01deg, #FF6E6D 0%, #FF3183 5.48%, #598BF3 88.77%, #657BEA 95.23%, #34B0DC 101.49%);
+      width: 425px;
+      margin: 0 20px;
+      position: relative !important;
+    }
+
+    .input-text {
+      line-height: 36px;
+      border-radius: 32px;
+      width: 380px;
+      padding: 0px;
+      margin-left: -43px;
+      border: none;
+      padding-left: 10px;
+    }
+
+    .input-text:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    .page-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0 60px 0;
+    }
+
+    .bottom-slogans {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -1px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .bottom-text {
+      font-size: 20px;
+      margin-left: 7px;
+    }
+
+    .bottom-block {
+      display: flex;
+      align-items: center;
+    }
+
+    .page-title {
+      display: none;
+    }
+
+    .announcement-bar {
+      display: none;
+    }
+
+    .footer {
+      display: none;
+    }
+
+    .header {
+      display: none;
+    }
+
+    .page-width {
+      max-width: 100% !important;
+      padding: 0px !important;
+    }
+
+    @media (max-width: 1025px) {
+      .page-content {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
+    }
+
+    .rte img {
+      border: none;
+    }
+  </style>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    const sendData = async (rating, url) => {
+      const data = {
+        type: !rating ? 'clients url' : 'new rating',
+        game: 'Break the Ice',
+        rating: rating,
+        url: url,
+      }
+      try {
+        const resp = await fetch('https://boomio-e-shop.myshopify.com/apps/bhandle', {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+        const result = await resp.json();
+        // console.log("Success:", result);
+      } catch (error) {
+        // console.log ("Error:", error);
+      }
+    }
+
+    const drawStars = (rating) => {
+      starsEl.innerHTML = ''
+      for (let i = 1; i < 6; i++) {
+        const starEl = document.createElement('img');
+        starEl.classList.add('star');
+        starEl.id = i;
+        (rating >= i) ? starEl.src = 'https://raw.githubusercontent.com/Remigijus66/shop-items/66fbd5b8922dc3f3b317942ab5ea4b2bb2fc4c87/star-solid-yellow.svg' : starEl.src = 'https://raw.githubusercontent.com/Remigijus66/shop-items/66fbd5b8922dc3f3b317942ab5ea4b2bb2fc4c87/star-regular-yellow.svg'
+        starsEl.append(starEl)
+      }
+      // const bntEl = document.createElement('btn')
+      // bntEl.textContent = 'Submit'
+      // bntEl.classList.add('submit-btn')
+      // bntEl.addEventListener('click', () => sendEmail(rating))
+      // starsEl.append(bntEl)
+    }
+
+    const starsEl = document.getElementById('stars')
+    drawStars(0)
+    starsEl.addEventListener('click', (e) => { drawStars(e.target.id), sendData(e.target.id, null) }
+    )
+
+    const urlBtnEl = document.getElementById('url-button')
+    const urlInpEl = document.getElementById('url-input')
+    urlBtnEl.addEventListener('click', (e) => { sendData(null, urlInpEl.value), window.location.href = 'https://share-eu1.hsforms.com/17ojO4FWHQHWPmKzC2m3c2wg20qx' })
+
+  </script>
+
+</body>
+
+</html>
