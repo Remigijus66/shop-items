@@ -21,6 +21,8 @@
       <div class="game-explanation">
         <p><span class='heading-text'> #1 Customers Choice</span>
         </p>
+        <p class="show-on-mobile">Experience 84% longer stays, and unlock a 78% conversion rate without slowing down
+          your website.</p>
         <p class="hide-on-mobile" style="font-size: 20px;">Discover why this game is a customer favorite!
       </p>
         <p class="hide-on-mobile" style="font-size: 20px;">- With an astounding game   <span class="purple-text">engagement rate of up to 96%,</span> it's no wonder users can't get enough.
@@ -31,13 +33,13 @@
       </p>
         <p  class="hide-on-mobile" style="font-size: 20px;">Try Boomio games and experience the incredible results!
       </p>
-        <div style="display:flex;  margin: 50px 0px">
+        <div style="display:flex;  margin: 30px 0px">
           <span style="font-size: 20px;">Rate this game</span>
           <div id="stars"></div>
         </div>
       </div>
       <div>
-        <img class="game-card w500" src="https://github.com/Remigijus66/shop-items/blob/main/claw.png?raw=true" alt="">
+        <img class="game-card w500" src="https://github.com/Remigijus66/shop-items/blob/main/claw-sqr.png?raw=true" alt="">
         <div class=" rating">
           <!-- <div id="stars"> -->
         </div>
@@ -356,6 +358,9 @@
       max-width: 100% !important;
       padding: 0px !important;
     }
+    .show-on-mobile {
+      display: none;
+    }
 
     @media (max-width: 1090px) {
       .container {
@@ -406,12 +411,17 @@
     transform: none;
 }
 .heading-text {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 32px;
 }
 
 .hide-on-mobile {
 display: none}
+
+/* .show-on-mobile {
+        display:block;
+      } */
+
 h4 {
     margin: 10px 0 10px 0;
     font-size: 20px;

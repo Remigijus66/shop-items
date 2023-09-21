@@ -22,6 +22,8 @@
       <div class="game-explanation">
         <p><span class='heading-text'> #1 Game for Shattering</span>
         </p>
+        <p class="show-on-mobile">Experience 84% longer stays, and unlock a 78% conversion rate without slowing down
+          your website.</p>
         <p class="hide-on-mobile" style="font-size: 20px;">Prepare to be amazed by the 'Break the Ice' game! </p>
         <p class="hide-on-mobile" style="font-size: 20px;">- Witness up to <span class="purple-text">84% increase in browsing time.</span>
          </p>
@@ -30,14 +32,14 @@
         <p class="hide-on-mobile" style="font-size: 20px;">- It <span class="purple-text">won't slow down</span> your website – the add-on is
           as light as a regular popup!</p>
         <p class="hide-on-mobile" style="font-size: 20px;">Try Boomio games and experience the incredible results!</p>
-        <div style="display:flex;  margin: 50px 0px">
+        <div style="display:flex;  margin: 30px 0px">
 
           <span style="font-size: 20px;">Rate this game</span>
           <div id="stars"></div>
         </div>
       </div>
       <div>
-        <img class="game-card w500" src="https://github.com/Remigijus66/shop-items/blob/main/ice.png?raw=true" alt="">
+        <img class="game-card w500" src="https://github.com/Remigijus66/shop-items/blob/main/ice-sqr.png?raw=true" alt="">
         <div class=" rating">
           <!-- <div id="stars"> -->
         </div>
@@ -66,7 +68,7 @@
       <div>
         <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/mole.png?raw=true" alt=""
           onclick="window.location.href='https://boomio-e-shop.myshopify.com/pages/whack-a-mole'">
-        <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/other.png?raw=true" alt=""
+        <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/claw-rect.png?raw=true" alt=""
           onclick="window.location.href='https://boomio-e-shop.myshopify.com/pages/claw-machine'">
         <img class="w300" src="https://github.com/Remigijus66/shop-items/blob/main/other.png?raw=true" alt=""
           onclick="window.location.href='https://share-eu1.hsforms.com/17ojO4FWHQHWPmKzC2m3c2wg20qx'">
@@ -364,6 +366,10 @@
       padding: 0px !important;
     }
 
+    .show-on-mobile {
+      display: none;
+    }
+
     @media (max-width: 1090px) {
       .container {
         width: 90%;
@@ -413,13 +419,16 @@
     transform: none;
 }
 .heading-text {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 32px;
 }
 
 .hide-on-mobile {
 display: none}
 
+/* .show-on-mobile {
+        display:block;
+      } */
 
 h4 {
     margin: 10px 0 10px 0;
