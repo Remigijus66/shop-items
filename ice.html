@@ -22,8 +22,7 @@
       <div class="game-explanation">
         <p><span class='heading-text'> #1 Game for Shattering</span>
         </p>
-        <p class="show-on-mobile">Experience 84% longer stays, and unlock a 78% conversion rate without slowing down
-          your website.</p>
+        <p class="show-on-mobile">Elevate browsing by 84%, convert users at 78%, and maintain your site's speed with our lightweight add-on!</p>
         <p class="hide-on-mobile" style="font-size: 20px;">Prepare to be amazed by the 'Break the Ice' game! </p>
         <p class="hide-on-mobile" style="font-size: 20px;">- Witness up to <span class="purple-text">84% increase in browsing time.</span>
          </p>
@@ -202,6 +201,10 @@
       transition: 200ms;
     }
 
+    .heading-text {
+    font-size: 40px;
+    line-height: 40px;
+}
 
     .colored-text {
       background-image: linear-gradient(to right top, #FFC24F 8.58%, #FF3183 32.32%, #8559F3 60.82%, #657BEA 66.73%, #34B0DC 77.01%, #15D1D3 84.73%, #09DDD0 88.95%);
@@ -426,9 +429,9 @@
 .hide-on-mobile {
 display: none}
 
-/* .show-on-mobile {
+.show-on-mobile {
         display:block;
-      } */
+      }
 
 h4 {
     margin: 10px 0 10px 0;
@@ -469,30 +472,37 @@ margin-top: 0px
       border: none;
     }
   </style>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
+    <script>
     const sendData = async (rating, url) => {
-      const data = {
-        type: !rating ? 'clients url' : 'new rating',
-        game: 'Break the Ice',
-        rating: rating,
-        url: url,
-      }
-      try {
-        const resp = await fetch('https://boomio-e-shop.myshopify.com/apps/bhandle', {
-          method: "POST",
-          mode: "cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        })
-        const result = await resp.json();
-        // console.log("Success:", result);
-      } catch (error) {
-        // console.log ("Error:", error);
-      }
-    }
+const readCookie = (name) => {
+    return (name = new RegExp('(?:^|;\\s*)' + ('' + name).replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&') + '=([^;]*)').exec(document.cookie)) && name[1];
+}
+  const data = {
+    user_session: readCookie('boomio_session'),
+    current_page_url: window.location.href,
+    extra_data: {
+      element: !rating ? 'url' : 'rating',
+      game: 'ice',
+      rating: rating,
+      url: url,
+    },
+
+  }
+  try{
+    const resp = await fetch( 'https://boomio-e-shop.myshopify.com/apps/bhandle', {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    } )
+    const result = await resp.json();
+    // console.log("Success:", result);
+  } catch (error) {
+    // console.log ("Error:", error);
+  }
+ }
 
     const drawStars = (rating) => {
       starsEl.innerHTML = ''

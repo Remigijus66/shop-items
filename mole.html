@@ -211,6 +211,10 @@
       transition: 200ms;
     }
 
+    .heading-text {
+    font-size: 40px;
+    line-height: 40px;
+}
 
     .colored-text {
       background-image: linear-gradient(to right top, #FFC24F 8.58%, #FF3183 32.32%, #8559F3 60.82%, #657BEA 66.73%, #34B0DC 77.01%, #15D1D3 84.73%, #09DDD0 88.95%);
@@ -375,13 +379,6 @@
       padding: 0px !important;
     }
 
-    .heading-text {
-
-      font-size: 60px;
-      line-height: 70px;
-
-    }
-
     .show-on-mobile {
       display: none;
     }
@@ -497,28 +494,36 @@
     }
   </style>
   <script>
-    const sendData = async (rating, url) => {
-      const data = {
-        type: !rating ? 'clients url' : 'new rating',
-        game: 'Whack a Mole',
-        rating: rating,
-        url: url,
-      }
-      try {
-        const resp = await fetch('https://boomio-e-shop.myshopify.com/apps/bhandle', {
-          method: "POST",
-          mode: "cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        })
-        const result = await resp.json();
-        // console.log("Success:", result);
-      } catch (error) {
-        // console.log ("Error:", error);
-      }
-    }
+ const sendData = async (rating, url) => {
+const readCookie = (name) => {
+    return (name = new RegExp('(?:^|;\\s*)' + ('' + name).replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&') + '=([^;]*)').exec(document.cookie)) && name[1];
+}
+  const data = {
+    user_session: readCookie('boomio_session'),
+    current_page_url: window.location.href,
+    extra_data: {
+      element: !rating ? 'url' : 'rating',
+      game: 'mole',
+      rating: rating,
+      url: url,
+    },
+
+  }
+  try{
+    const resp = await fetch( 'https://boomio-e-shop.myshopify.com/apps/bhandle', {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    } )
+    const result = await resp.json();
+    // console.log("Success:", result);
+  } catch (error) {
+    // console.log ("Error:", error);
+  }
+ }
 
     const drawStars = (rating) => {
       starsEl.innerHTML = ''
